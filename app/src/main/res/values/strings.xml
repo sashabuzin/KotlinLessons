@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SearchByMovies</string>
+    <string name="now_playing_tv">Now playing</string>
+    <string name="popular_tv">Popular</string>
+    <string name="top_rated_tv">Top rated</string>
+    <string name="upcoming_tv">Upcoming</string>
 </resources>
