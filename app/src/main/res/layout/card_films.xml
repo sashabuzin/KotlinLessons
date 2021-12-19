@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/parentLayout"
+    android:id="@+id/parentLayoutCard"
     android:layout_width="160sp"
     android:layout_height="wrap_content"
     android:layout_marginLeft="15sp"
@@ -15,15 +15,27 @@
         android:layout_height="220sp"
         android:orientation="vertical">
 
-        <ProgressBar
-            android:id="@+id/progressBarcv"
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/spin_kit_film_card"
+            style="@style/SpinKitView.DoubleBounce"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
             android:scaleX="0.10"
             android:scaleY="0.10"
-            android:textColor="@color/colorAccent"
-            android:visibility="visible" />
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/marrs_green"
+            android:visibility="visible"/>
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progressBarcv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:scaleX="0.10"-->
+<!--            android:scaleY="0.10"-->
+<!--            android:textColor="@color/colorAccent"-->
+<!--            android:visibility="visible" />-->
 
         <ImageView
 

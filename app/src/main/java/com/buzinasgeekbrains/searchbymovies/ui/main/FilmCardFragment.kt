@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.buzinasgeekbrains.searchbymovies.R
+import com.buzinasgeekbrains.searchbymovies.ui.main.ViewModel.FilmCardViewModel
 
 class FilmCardFragment : Fragment() {
 

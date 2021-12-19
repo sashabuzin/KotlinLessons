@@ -1,4 +1,4 @@
-package com.buzinasgeekbrains.searchbymovies.ui.main
+package com.buzinasgeekbrains.searchbymovies.ui.main.ViewModel
 
 import androidx.lifecycle.ViewModel
 
