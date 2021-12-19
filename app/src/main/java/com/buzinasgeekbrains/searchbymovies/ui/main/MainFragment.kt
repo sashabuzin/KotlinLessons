@@ -26,22 +26,25 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         return inflater.inflate(R.layout.main_fragment, container, false)
-
+        binding = MainFragmentBinding.inflate(layoutInflater)
+        binding.mainContainer.setOnClickListener { onStop() }
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        binding = MainFragmentBinding.inflate(layoutInflater)
-        binding.mainContainer.setOnClickListener { onStop() }
-        val observer = Observer<Any> {renderData(it)}
+//        val observer = Observer<Any> { renderData(it) }
 //        viewModel.getData().observe(viewLifecycleOwner, observer)
 
     }
 
-    private fun renderData(it: Any?) {
+    private fun renderData(data: Any) {
 
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
     }
 
 }

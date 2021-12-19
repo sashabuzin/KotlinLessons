@@ -5,6 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.ActorsFragment">
 
-    <include layout="@layout/card_films"/>
+    <include layout="@layout/film_card_fragment"/>
 
 </FrameLayout>
