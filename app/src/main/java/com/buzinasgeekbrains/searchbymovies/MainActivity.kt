@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         }
         binding = MainActivityBinding.inflate(layoutInflater)
 
+//        findViewById<Button>(R.id.toolbar_favorite_btn).setOnClickListener { onStop() }
+
         binding.toolbar.toolbarMovieBtn.setOnClickListener {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.main_container, MainFragment.newInstance())
