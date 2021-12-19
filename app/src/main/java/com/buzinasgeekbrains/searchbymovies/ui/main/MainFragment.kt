@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.Observer
 import com.buzinasgeekbrains.searchbymovies.R
 import com.buzinasgeekbrains.searchbymovies.databinding.MainFragmentBinding
 import com.buzinasgeekbrains.searchbymovies.ui.main.ViewModel.MainViewModel
@@ -33,7 +34,14 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         binding = MainFragmentBinding.inflate(layoutInflater)
+        binding.mainContainer.setOnClickListener { onStop() }
+        val observer = Observer<Any> {renderData(it)}
+//        viewModel.getData().observe(viewLifecycleOwner, observer)
 
     }
 
- }
+    private fun renderData(it: Any?) {
+
+    }
+
+}
