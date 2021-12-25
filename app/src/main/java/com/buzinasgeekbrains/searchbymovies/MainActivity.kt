@@ -1,12 +1,9 @@
 package com.buzinasgeekbrains.searchbymovies
 
-import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Button
 import com.buzinasgeekbrains.searchbymovies.databinding.MainActivityBinding
-import com.buzinasgeekbrains.searchbymovies.ui.main.ActorsFragment
+import com.buzinasgeekbrains.searchbymovies.ui.main.ActorsListFragment
 import com.buzinasgeekbrains.searchbymovies.ui.main.FavoritesFragment
 import com.buzinasgeekbrains.searchbymovies.ui.main.MainFragment
 
@@ -32,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.toolbar.toolbarPeopleBtn.setOnClickListener {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container_for_fragments, ActorsFragment.newInstance())
+                .replace(R.id.container_for_fragments, ActorsListFragment.newInstance())
                 .commitNow()
         }
         binding.toolbar.toolbarFavoriteBtn.setOnClickListener {

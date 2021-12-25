@@ -9,10 +9,10 @@ import android.view.ViewGroup
 import com.buzinasgeekbrains.searchbymovies.R
 import com.buzinasgeekbrains.searchbymovies.ui.main.ViewModel.ActorsViewModel
 
-class ActorsFragment : Fragment() {
+class ActorsListFragment : Fragment() {
 
     companion object {
-        fun newInstance() = ActorsFragment()
+        fun newInstance() = ActorsListFragment()
     }
 
     private lateinit var viewModel: ActorsViewModel
@@ -21,13 +21,12 @@ class ActorsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.actors_fragment, container, false)
+        return inflater.inflate(R.layout.actors_list_fragment, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(ActorsViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
 }
