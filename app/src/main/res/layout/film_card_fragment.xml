@@ -10,17 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="Film name"
+        android:text="@string/film_card_film_name"
         android:textColor="@android:color/black"
-        android:textSize="30sp"
-        android:layout_margin="5dp"/>
+        android:textSize="@dimen/film_card_name_text_size"
+        android:layout_margin="@dimen/film_card_film_name_margin"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tagline"
+        android:text="@string/film_card_tagline_text"
         android:textColor="@android:color/darker_gray"
-        android:layout_margin="5dp"/>
+        android:layout_margin="@dimen/film_card_tagline_margin"/>
 
 
     <LinearLayout
@@ -29,9 +29,9 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="190dp"
-            android:layout_height="250dp"
-            android:layout_margin="5dp"/>
+            android:layout_width="@dimen/film_card_image_view_width"
+            android:layout_height="@dimen/film_card_image_view_height"
+            android:layout_margin="@dimen/film_card_image_view_margin"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -41,30 +41,30 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="genre"
-                android:layout_margin="5dp"/>
+                android:text="@string/film_card_genre_text"
+                android:layout_margin="@dimen/film_card_genre_margin"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="rating"
-                android:layout_margin="5dp"/>
+                android:text="@string/film_card_rating_text"
+                android:layout_margin="@dimen/film_card_rating_margin"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Budget"
-                android:layout_margin="5dp"/>
+                android:text="@string/film_card_budget_text"
+                android:layout_margin="@dimen/film_card_budget_margin"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Revenue"
-                android:layout_margin="5dp"/>
+                android:text="@string/film_card_revenue_text"
+                android:layout_margin="@dimen/film_card_revenue_margin"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Release date"
-                android:layout_margin="5dp"/>
+                android:text="@string/film_card_release_date_text"
+                android:layout_margin="@dimen/film_card_release_date_text_margin"/>
 
         </LinearLayout>
 
@@ -77,22 +77,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_margin="@dimen/main_fragment_containers_margin">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Description"
-                android:layout_margin="5dp"/>
+                android:text="@string/film_card_description_text"
+                />
 
             <TextView
                 android:id="@+id/cast_textview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-black"
-                android:text="cast"
+                android:text="@string/film_card_cast_text"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/film_card_cast_text_size" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/cast_rv"
@@ -107,9 +108,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-black"
-                android:text="Similar Movies"
+                android:text="@string/film_card_similar_movies_text"
                 android:textColor="@android:color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/film_card_similar_movie_text_size" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/similar_movies_rv"

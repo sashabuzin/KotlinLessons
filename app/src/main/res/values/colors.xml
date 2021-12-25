@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorAccent">#D81B60</color>
     <color name="marrs_green">#FF008C8C</color>
+    <color name="background_actor_top_card">#324C58</color>
 </resources>

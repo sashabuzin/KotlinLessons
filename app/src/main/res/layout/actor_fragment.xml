@@ -17,10 +17,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200sp"
+                android:layout_height="@dimen/height_actor_top_cadr"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="-2dp"
-                android:background="#324C58"
+                android:background="@color/background_actor_top_card"
                 android:orientation="horizontal">
 
                 <RelativeLayout
@@ -43,12 +43,12 @@
 
                     <ImageView
                         android:id="@+id/imagepeople"
-                        android:layout_width="120dp"
-                        android:layout_height="170dp"
-                        android:layout_marginLeft="45dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="10dp"
+                        android:layout_width="@dimen/image_view_actor_card_width"
+                        android:layout_height="@dimen/image_view_actor_card_height"
+                        android:layout_marginLeft="@dimen/image_view_actor_card_margin_left"
+                        android:layout_marginTop="@dimen/image_view_actor_card_margin_top"
+                        android:layout_marginRight="@dimen/image_view_actor_card_margin_right"
+                        android:layout_marginBottom="@dimen/image_view_actor_card_margin_bottom"
                         android:visibility="visible" />
                 </RelativeLayout>
 

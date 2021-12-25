@@ -5,6 +5,15 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.ActorsFragment">
 
-    <include layout="@layout/film_card_fragment"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_actors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_fragment_containers_margin"
+        android:orientation="vertical">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </FrameLayout>

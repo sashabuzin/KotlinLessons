@@ -7,4 +7,14 @@
     <string name="movie_toolbar_btn">MOVIE</string>
     <string name="people_toolbar_btn">PEOPLE</string>
     <string name="favorite_toolbar_btn">FAVORITE</string>
+    <string name="film_card_film_name">Film name</string>
+    <string name="film_card_tagline_text">Tagline</string>
+    <string name="film_card_genre_text">genre</string>
+    <string name="film_card_rating_text">rating</string>
+    <string name="film_card_budget_text">Budget</string>
+    <string name="film_card_revenue_text">Revenue</string>
+    <string name="film_card_release_date_text">Release date</string>
+    <string name="film_card_description_text">Description</string>
+    <string name="film_card_cast_text">cast</string>
+    <string name="film_card_similar_movies_text">Similar Movies</string>
 </resources>
