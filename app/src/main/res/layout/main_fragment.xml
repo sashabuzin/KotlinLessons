@@ -50,7 +50,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal" />
 
-        <include layout="@layout/card_films"/>
+        <include layout="@layout/card_films"
+            android:id="@+id/card_film_plug1"/>
     </LinearLayout>
 
     <LinearLayout
@@ -75,7 +76,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal" />
 
-        <include layout="@layout/card_films"/>
+        <include layout="@layout/card_films"
+            android:id="@+id/card_film_plug2"/>
 
     </LinearLayout>
 
@@ -101,7 +103,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal" />
 
-        <include layout="@layout/card_films"/>
+        <include layout="@layout/card_films"
+            android:id="@+id/card_film_plug3"/>
 
     </LinearLayout>
 
@@ -128,7 +131,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal" />
 
-        <include layout="@layout/card_films"/>
+        <include layout="@layout/card_films"
+            android:id="@+id/card_film_plug4"/>
 
     </LinearLayout>
 

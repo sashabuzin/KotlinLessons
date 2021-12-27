@@ -5,6 +5,5 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.FavoritesFragment">
 
-    <include layout="@layout/film_card_fragment"/>
 
 </FrameLayout>

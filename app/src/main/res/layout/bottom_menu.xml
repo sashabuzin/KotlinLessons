@@ -6,28 +6,32 @@
     android:orientation="horizontal"
     android:layout_margin="@dimen/toolbar_margin"
     android:id="@+id/toolbar_main"
-    >
 
+    >
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/toolbar_movie_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/movie_toolbar_btn"/>
+        android:text="@string/movie_toolbar_btn"
+        android:background="@color/marrs_green"/>
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/toolbar_people_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/people_toolbar_btn"/>
+        android:text="@string/people_toolbar_btn"
+        android:background="@color/marrs_green"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/toolbar_favorite_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/favorite_toolbar_btn"/>
+        android:text="@string/favorite_toolbar_btn"
+        android:background="@color/marrs_green"/>
 
 
 
